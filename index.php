@@ -1,7 +1,7 @@
 <?php
 
 // define some constants to use absolutes rather than relatives paths 
-require './../core/website_const.php';
+require './core/website_const.php';
 
 // autoloader for the other classes - classes have to be in models/
 require CORE.'Autoloader.php';

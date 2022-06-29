@@ -7,7 +7,7 @@ class Installer {
     }
 
     static function check(){
-        if (!isset($_GET['section']) && !file_exists('../conf/db_const.php')){
+        if (!isset($_GET['section']) && !file_exists(CONF.'db_const.php')){
             $_GET['section'] = 'install';
             $_GET['action'] = 'conf';
         }       
