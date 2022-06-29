@@ -113,13 +113,12 @@ Specialities::show_all();
 Targets::show_all();
 ?>
 </div>
-
-   
 </form>
 
 
 <?php
-/* doesn't work ...
+/*
+ doesn't work yet - all the submit value are the same no different name...
 if (isset($_POST['delRow']))
 {
   $table = $_POST['delRow'][0];
@@ -168,9 +167,9 @@ if (isset($_POST['delRow']))
 
   $db->query($sql);
 }
+
 */
 ?>
-
 
 <!-- style mis ici car ne fonctionne pas dans le template/default.php -->
 <style>

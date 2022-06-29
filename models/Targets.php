@@ -35,7 +35,7 @@ class Targets {
                 <td><?= $target->code_name; ?></td>
                 <td>
                     <input type="hidden" name="delRow[]" value="targets">
-                    <input type="hidden" name="deRow[]" value="x">
+                    <input type="hidden" name="delRow[]" value="x">
                     <input type="hidden" name="delRow" value="<?= $target->id_civil.$target->code_name; ?>" />
                     <button type="submit" class="btn btn-danger">X</button>               
                 </td>

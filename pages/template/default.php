@@ -9,7 +9,7 @@
     <title>KGB</title>
 
     <!-- Bootstrap5 CSS -->
-    <link href= "./../../bootstrap5/css/bootstrap.min.css" rel="stylesheet">
+    <link href= "./bootstrap5/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- CSS add -->
 
@@ -19,7 +19,7 @@
      donc devrait être pris en compte...
      mais le css ne s'applique pas .... -->
 
-    <!--<link href= "./../../css/style.css" rel="stylesheet"> -->
+    <!--<link href= "./css/style.css" rel="stylesheet"> -->
 
   </head>
 
@@ -48,18 +48,18 @@
           <div class="collapse navbar-collapse" id="burgerized">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" href="./../" aria-current="page">Accueil</a>
+                <a class="nav-link active" href="./../../index.php" aria-current="page">Accueil</a>
               </li>
               <?php if (isset($_SESSION['auth'])): ?>
                 <li class="nav-item">
-                <a class="nav-link" href="./../../index.php?section=admin">Administration</a>
+                <a class="nav-link" href="./index.php?section=admin">Administration</a>
 
                 <li class="nav-item">
-                <a class="nav-link" href="./../../index.php?section=home&action=logout">Logout</a>
+                <a class="nav-link" href="./index.php?section=home&action=logout">Logout</a>
               </li>
               <?php else: ?>             
                 <li class="nav-item">
-                <a class="nav-link" href="./../../index.php?section=home&action=login">Login</a>
+                <a class="nav-link" href="./index.php?section=home&action=login">Login</a>
               </li>
               <?php endif; ?>
             </ul>
@@ -80,10 +80,9 @@
   </body>
 
   <!-- Bootstrap5 JavaScript -->
-  <script src="./../../bootstrap5/js/bootstrap.bundle.min.js"></script>
+  <script src="./bootstrap5/js/bootstrap.bundle.min.js"></script>
 
 <!-- Javascript add -->
-  <script src="./../../js/admin_select_table.js"></script>
-  <script src="./../../js/mission_details.js"></script>
+  <script src="./js/admin_select_table.js"></script>
 
 </html>

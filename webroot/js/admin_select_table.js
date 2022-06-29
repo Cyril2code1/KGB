@@ -1,4 +1,3 @@
-//document.write("This is written from JavaScript");
 
 function showDiv(e){
 
@@ -7,6 +6,10 @@ function showDiv(e){
         adForm = this.form,
         classeSelect = "select-table-show",
         tableDivs = adForm.getElementsByClassName("select-table");
+
+  /* process all the divs with class = "select-table", 
+     compare each id with the one we choose and when match,
+     change the class for "select-table-show" css do the rest */
 
     for(var i = 0; i < tableDivs.length; i++){
       var elem = tableDivs[i];
@@ -17,8 +20,10 @@ function showDiv(e){
       }
     }
   }
-  //Quand le DOm est dispo
-  document.addEventListener('DOMContentLoaded',function(){
-    var adForm = document.forms['adminForm'];
-    adForm['table-select'].addEventListener('change',showDiv);
+  
+
+// when a table is selected -> function showDiv
+document.addEventListener('DOMContentLoaded',function(){
+  var adForm = document.forms['adminForm'];
+  adForm['table-select'].addEventListener('change',showDiv);
   });
